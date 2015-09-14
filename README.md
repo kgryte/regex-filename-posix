@@ -33,6 +33,11 @@ var parts = re.exec( '/foo/bar/index.js' );
 		'.js'
 	]
 */
+
+var root = parts[ 1 ];
+var dirname = parts[ 2 ];
+var basename = parts[ 3 ];
+var extname = parts[ 4 ];
 ```
 
 ## Notes
