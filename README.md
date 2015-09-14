@@ -26,18 +26,13 @@ var re = require( 'regex-filename-posix' );
 var parts = re.exec( '/foo/bar/index.js' );
 /*
 	[
-		'/foo/bar/index.js',
-		'/',
-		'foo/bar/',
-		'index.js',
-		'.js'
+		'/foo/bar/index.js',   // input value
+		'/',                   // root
+		'foo/bar/',            // dirname
+		'index.js',            // basename
+		'.js'                  // extname
 	]
 */
-
-var root = parts[ 1 ];
-var dirname = parts[ 2 ];
-var basename = parts[ 3 ];
-var extname = parts[ 4 ];
 ```
 
 ## Notes
